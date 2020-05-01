@@ -1,0 +1,42 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="@Html.Sitecore().Field("MetaDescription", new {DisableWebEdit=true})">
+    <title>@Html.Sitecore().Field("Title", new { DisableWebEdit = true })</title>
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/shop-item.css" rel="stylesheet">
+    @Html.Sitecore().VisitorIdentification()
+</head>
+<body>
+    <!-- Navigation -->
+    @Html.Sitecore().Placeholder("header")
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <h1 class="my-4">My Tasks</h1>
+                @Html.Sitecore().Placeholder("sideNav")
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-9">
+                @Html.Sitecore().Placeholder("main")
+                <!-- /.card -->
+            </div>
+            <!-- /.col-lg-9 -->
+        </div>
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    @Html.Sitecore().Rendering("Footer")
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/Scripts/jquery-3.5.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>
