@@ -10,5 +10,6 @@ namespace Sitecore.Education.TodoManager.Models
         public HtmlString Category { get; set; }
         public HtmlString Status { get; set; }
         public HtmlString Details { get; set; }
+        public HtmlString Url { get; internal set; }
     }
 }

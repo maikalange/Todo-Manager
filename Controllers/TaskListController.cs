@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Sitecore.Collections;
+using Sitecore.Education.TodoManager.Models;
+using Sitecore.Links;
+using Sitecore.Web.UI.WebControls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +15,33 @@ namespace Sitecore.Education.TodoManager.Controllers
         // GET: TaskList
         public ActionResult Index()
         {
-            return View();
+            return View(CreateModel());
+        }
+
+        public ActionResult AllTasks()
+        {
+            return View(CreateModel());
+        }
+
+        private List<Task> CreateModel()
+        {
+            TaskList tasks = new TaskList();
+            ChildList items = Context.Database.GetItem("/sitecore/content/TODO/Home/My Tasks").GetChildren();
+            foreach (Data.Items.Item item in items)
+            {
+
+                Task t = new Task()
+                {
+                    Category = new HtmlString(FieldRenderer.Render(item,"category")),
+                    Description = new HtmlString(FieldRenderer.Render(item, "description")),
+                    Details = new HtmlString(FieldRenderer.Render(item, "details")),
+                    DueDate = DateUtil.ParseDateTime(FieldRenderer.Render(item, "date due"), DateTime.UtcNow),
+                    Status = new HtmlString(FieldRenderer.Render(item, "status")),
+                    Url = new HtmlString(LinkManager.GetItemUrl(item))
+                };
+                tasks.Add(t);
+            }
+            return tasks;
         }
     }
 }

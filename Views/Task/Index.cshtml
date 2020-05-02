@@ -1,10 +1,10 @@
-﻿@model ToDoManager.Models.Task
+﻿@model Sitecore.Education.TodoManager.Models.Task
 <div class="card mt-4">
     <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
     <div class="card-body">
         <h3 class="card-title">@Model.Description</h3>
-        <h4>@Model.Category</h4>
-        <h5>@Model.DueDate</h5>
+        <h4>Category: @Model.Category</h4>
+        <h5>Due date: @Model.DueDate</h5>
         <p class="card-text">@Model.Details</p>
         <span class="text-warning">@Model.Status</span>
     </div>
