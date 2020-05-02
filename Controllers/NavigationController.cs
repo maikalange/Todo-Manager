@@ -8,7 +8,6 @@ namespace Sitecore.Education.TodoManager.Controllers
 {
     public class NavigationController : Controller
     {
-        // GET: Navigation
         public ActionResult Index()
         {
             return View();
