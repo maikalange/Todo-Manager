@@ -21,6 +21,7 @@ namespace Sitecore.Education.TodoManager.Controllers
                 Category = new HtmlString(FieldRenderer.Render(item, "category")),
                 Description = new HtmlString(FieldRenderer.Render(item, "description")),
                 Details = new HtmlString(FieldRenderer.Render(item, "details")),
+                DueDate = new HtmlString(FieldRenderer.Render(item, "date due")),
                 Status = new HtmlString(FieldRenderer.Render(item, "status")),
                 Url = new HtmlString(LinkManager.GetItemUrl(item))
             };
