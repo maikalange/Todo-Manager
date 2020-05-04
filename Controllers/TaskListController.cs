@@ -26,7 +26,7 @@ namespace Sitecore.Education.TodoManager.Controllers
         private List<Task> CreateModel()
         {
             TaskList tasks = new TaskList();
-            ChildList items = Context.Database.GetItem("/sitecore/content/TODO/Home/My Tasks").GetChildren();
+            var items = Context.Database.GetItem("/sitecore/content/TODO/Home/My Tasks").GetChildren();
             foreach (Data.Items.Item item in items)
             {
 
@@ -35,7 +35,7 @@ namespace Sitecore.Education.TodoManager.Controllers
                     Category = new HtmlString(FieldRenderer.Render(item,"category")),
                     Description = new HtmlString(FieldRenderer.Render(item, "description")),
                     Details = new HtmlString(FieldRenderer.Render(item, "details")),
-                    DueDate = new HtmlString(FieldRenderer.Render(item, "date due")),
+                    DueDate = new HtmlString(FieldRenderer.Render(item, "datedue")),
                     Status = new HtmlString(FieldRenderer.Render(item, "status")),
                     Url = new HtmlString(LinkManager.GetItemUrl(item))
                 };
