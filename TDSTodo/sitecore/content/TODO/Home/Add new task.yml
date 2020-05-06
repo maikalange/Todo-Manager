@@ -1,0 +1,30 @@
+---
+ID: "3267b643-6e2e-40c8-a643-8f4b05c444b0"
+Parent: "6b1de2c4-e8e6-4aad-8140-5f8b766fcc3c"
+Template: "faa91e20-000a-4b9e-94ac-30828d70fbbc"
+Path: /sitecore/content/TODO/Home/Add new task
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200430T080328Z
+    - ID: "8109faab-6f8e-43cc-8051-7e8d79dd3af9"
+      Hint: ContentHeading
+      Value: Add a new Task
+    - ID: "825589b3-da2a-4a84-8c18-863a76e53e58"
+      Hint: ContentIntro
+      Value: You can add a new task. A task must have a description, due date, category and status. The default status is open.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ddced32c-c6bf-4c2e-aa40-df6a99f6983e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20200430T080838Z

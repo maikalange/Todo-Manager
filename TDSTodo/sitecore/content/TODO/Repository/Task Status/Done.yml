@@ -1,0 +1,32 @@
+---
+ID: "83560fcd-12ff-480d-bbc2-d3001f89aea4"
+Parent: "499d7705-dd88-44e0-b352-43e46fd16fcb"
+Template: "e77c8c94-795d-43f2-8872-18c7b09396c4"
+Path: /sitecore/content/TODO/Repository/Task Status/Done
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200430T084842Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5c2e9ac3-5853-46c0-9397-6b8cb2186be1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20200430T084842Z

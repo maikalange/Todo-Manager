@@ -1,0 +1,54 @@
+---
+ID: "a1fd0ad6-317b-43a8-ae14-9dcbcdc5d04e"
+Parent: "3606ee62-7048-4136-89b4-d4beac3b5806"
+Template: "3606ee62-7048-4136-89b4-d4beac3b5806"
+Path: /sitecore/templates/Project/TODO/Task Details/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{07601589-3751-4598-BEC0-BCF81D346A97}">
+        <r
+          id="{DC726273-3B41-4C43-B180-64D1833AFAE2}"
+          ph="main"
+          uid="{5D709CFC-ED48-4C89-9AB5-76606BE3AF08}" />
+        <r
+          id="{3F80BDB4-5F00-4275-8FFA-7E05BD33FCA0}"
+          ph="sideNav"
+          uid="{CAB252F8-570D-4D96-B41C-5E87FE29C228}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25239693-1968-4c38-aa81-3e5417ab0e9c"
+      Hint: Description
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200429T133452Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7d1ab058-15ac-48c1-a495-d0366a789e0e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20200502T161325Z
