@@ -515,6 +515,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\todo\search.css" />
     <Content Include="Content\shop-item.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -544,6 +545,10 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
+    <Content Include="App_Config\Include\Project\Todo\Solr.Events.Master.Index.config" />
+    <Content Include="App_Config\Include\Project\Todo\Todo.DefaultIndexConfiguration.config" />
+    <None Include="App_Config\Include\Project\Todo\Solr.Events.Web.Index.config" />
+    <Content Include="App_Config\Include\Project\Todo\Todo.SiteDefinition.config" />
     <None Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.DeployedContentEditorWarnings.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
