@@ -504,7 +504,9 @@
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\TaskController.cs" />
     <Compile Include="Controllers\TaskListController.cs" />
+    <Compile Include="Models\SearchResultsList.cs" />
     <Compile Include="Models\Task.cs" />
+    <Compile Include="Models\TaskDetailsSearch.cs" />
     <Compile Include="Models\TaskList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -545,10 +547,10 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
-    <Content Include="App_Config\Include\Project\Todo\Solr.Events.Master.Index.config" />
-    <Content Include="App_Config\Include\Project\Todo\Todo.DefaultIndexConfiguration.config" />
-    <None Include="App_Config\Include\Project\Todo\Solr.Events.Web.Index.config" />
-    <Content Include="App_Config\Include\Project\Todo\Todo.SiteDefinition.config" />
+    <Content Include="App_Config\Include\Todo\Solr.Todo.Master.Index.config" />
+    <Content Include="App_Config\Include\Todo\Todo.DefaultIndexConfiguration.config" />
+    <None Include="App_Config\Include\Todo\Solr.Todo.Web.Index.config" />
+    <Content Include="App_Config\Include\Todo\Todo.SiteDefinition.config" />
     <None Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.DeployedContentEditorWarnings.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
@@ -673,6 +675,7 @@
     <Content Include="Views\TaskList\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Config\Include\Project\" />
     <Folder Include="App_Data\Include\Todo\" />
   </ItemGroup>
   <ItemGroup>

@@ -11,8 +11,8 @@ namespace Sitecore.Education.TodoManager.Controllers
         // GET: AddTask
         public ActionResult Index()
         {
-            ViewBag.Status = Context.Database.GetItem("/sitecore/content/TODO/Repository/Task Status").GetChildren();
-            ViewBag.Category = Context.Database.GetItem("/sitecore/content/TODO/Repository/Task Category").GetChildren();
+            ViewBag.Status = Context.Database.GetItem("{499D7705-DD88-44E0-B352-43E46FD16FCB}").GetChildren();
+            ViewBag.Category = Context.Database.GetItem("{D3D68F62-061B-4847-ACC4-CA1109EAA718}").GetChildren();
             return View();
         }
 

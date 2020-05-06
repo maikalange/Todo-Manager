@@ -26,7 +26,7 @@ namespace Sitecore.Education.TodoManager.Controllers
         private List<Task> CreateModel()
         {
             TaskList tasks = new TaskList();
-            var items = Context.Database.GetItem("/sitecore/content/TODO/Home/My Tasks").GetChildren();
+            var items = Context.Database.GetItem("{ED3BC3C1-43DB-4FE3-92CD-066401F1773A}").GetChildren();
             foreach (Data.Items.Item item in items)
             {
 
