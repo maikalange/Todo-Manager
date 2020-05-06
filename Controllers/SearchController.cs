@@ -19,6 +19,8 @@ namespace Sitecore.Education.TodoManager.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Index(string searchTerm)
         {
+            //Get the index
+            //Create a search context and then perform the search
             return View();
         }
     }
