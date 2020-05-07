@@ -12,7 +12,6 @@
         <div class="form-group mb-2">
             <input type="text" name="searchTerm" class="form-control-plaintext" id="staticEmail2" placeholder="search for task">
         </div>
-        <input type="hidden" value="1" name="pageNo" />
         <input type="submit" value="search" class="btn btn-primary mb-2">
     </div>
 
@@ -21,7 +20,7 @@
         <div class="container">
             <hgroup class="mb20">
                 <h1>Search Results</h1>
-                <h2 class="lead"><strong class="text-danger">@Model.TotalResultCount</strong> results were found for the search for <strong class="text-danger">@ViewBag.SearchTerm</strong></h2>
+                <h2 class="lead"><strong class="text-danger">@ViewBag.TotalResultCount</strong> results were found for the search for <strong class="text-danger">@ViewBag.SearchTerm</strong></h2>
             </hgroup>
             <section class="col-xs-12 col-sm-6 col-md-12">
                 @foreach (var item in Model.Tasks)

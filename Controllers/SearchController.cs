@@ -10,16 +10,16 @@ namespace Sitecore.Education.TodoManager.Controllers
     public class SearchController : Controller
     {
         // GET: Search
-        public ActionResult Index(int pageNo=1)
+        public ActionResult Index(int pageNo=0)
         {
             return View(GetEventsList(string.Empty,pageNo));
         }
         [HttpPost]
-        public ActionResult Index(string searchTerm="", int pageNo = 1)
+        public ActionResult Index(int pageNo=0,string searchTerm="")
         {
             return View(GetEventsList(searchTerm, pageNo));
         }
-        private const int PageSize = 2;
+        private const int PageSize = 10;
         public SearchResultsList GetEventsList(string searchTerm,int pageNo)
         {
             ViewBag.SearchTerm = searchTerm;
@@ -30,12 +30,14 @@ namespace Sitecore.Education.TodoManager.Controllers
                 var results = context.GetQueryable<TaskDetailsSearchItem>()
                 .Page(pageNo, PageSize)
                 .GetResults();
-                return new SearchResultsList()
+                ViewBag.TotalResultCount = results.TotalSearchResults;
+                 var x =new SearchResultsList()
                 {
                     Tasks = results.Hits.Select(h => h.Document).ToArray(),
                     PageSize = PageSize,
                     TotalResultCount = results.TotalSearchResults
                 };
+                return x;
             }
         }
     }
