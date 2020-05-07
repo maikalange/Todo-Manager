@@ -10,16 +10,13 @@ namespace Sitecore.Education.TodoManager.Controllers
     public class SearchController : Controller
     {
         // GET: Search
-        public ActionResult Index()
+        public ActionResult Index(int pageNo=1)
         {
-            return View();
+            return View(GetEventsList(string.Empty,pageNo));
         }
         [HttpPost]
-        public ActionResult Index(string searchTerm, int pageNo = 1)
+        public ActionResult Index(string searchTerm="", int pageNo = 1)
         {
-            //Get the index
-            //Create a search context and then perform the search
-
             return View(GetEventsList(searchTerm, pageNo));
         }
         private const int PageSize = 4;
