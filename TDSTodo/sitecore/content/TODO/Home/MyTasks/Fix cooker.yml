@@ -1,0 +1,39 @@
+---
+ID: "3ee758fd-b770-48a5-8563-ade48fa88e40"
+Parent: "ed3bc3c1-43db-4fe3-92cd-066401f1773a"
+Template: "3606ee62-7048-4136-89b4-d4beac3b5806"
+Path: /sitecore/content/TODO/Home/MyTasks/Fix cooker
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2085c5dc-ea04-43df-89d8-fd23088dca28"
+      Hint: Details
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "25239693-1968-4c38-aa81-3e5417ab0e9c"
+      Hint: Description
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200506T152425Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "88be361f-29d1-40a3-9c44-9b1ca506220c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "bce9a0e8-3330-4a71-a489-9280aadc9eb0"
+      Hint: Status
+      Value: In progress
+    - ID: "d2106baa-d95d-4de5-8984-081b30e2ec1f"
+      Hint: Category
+      Value: Domestic
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20200506T152508Z
+    - ID: "f22b54ec-dcc2-4ccb-bf30-ea9ddb9f85ff"
+      Hint: DateDue
+      Value: 20200530T000000

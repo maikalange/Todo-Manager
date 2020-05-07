@@ -1,0 +1,47 @@
+---
+ID: "89c53225-7268-4a31-b4b2-f4ad6065ce73"
+Parent: "ed3bc3c1-43db-4fe3-92cd-066401f1773a"
+Template: "3606ee62-7048-4136-89b4-d4beac3b5806"
+Path: /sitecore/content/TODO/Home/MyTasks/Night out
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2085c5dc-ea04-43df-89d8-fd23088dca28"
+      Hint: Details
+      Value: erterter
+    - ID: "25239693-1968-4c38-aa81-3e5417ab0e9c"
+      Hint: Description
+      Value: Night out
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200506T074444Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3798f627-2bbc-4f49-8992-8d5c68215d15"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "bce9a0e8-3330-4a71-a489-9280aadc9eb0"
+      Hint: Status
+      Value: Done
+    - ID: "d2106baa-d95d-4de5-8984-081b30e2ec1f"
+      Hint: Category
+      Value: Domestic
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20200506T074444Z
+    - ID: "f22b54ec-dcc2-4ccb-bf30-ea9ddb9f85ff"
+      Hint: DateDue
+      Value: 20200523T000000
