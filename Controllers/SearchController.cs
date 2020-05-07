@@ -19,7 +19,7 @@ namespace Sitecore.Education.TodoManager.Controllers
         {
             return View(GetEventsList(searchTerm, pageNo));
         }
-        private const int PageSize = 4;
+        private const int PageSize = 2;
         public SearchResultsList GetEventsList(string searchTerm,int pageNo)
         {
             ViewBag.SearchTerm = searchTerm;

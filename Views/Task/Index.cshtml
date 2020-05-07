@@ -1,9 +1,9 @@
 ﻿@model Sitecore.Education.TodoManager.Models.Task
 @using Sitecore.Mvc.Extensions
 <div class="card mt-4">
-    <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
+    <img class="card-img-top img-fluid" src="https://picsum.photos/900/400" alt="">
     <div class="card-body">
-        <h3 class="card-title">@Model.Description</h3>
+        <h3 class="card-title">@Model.Name</h3>
         @using(Html.EditFrame(RenderingContext.Current.ContextItem.ID.ToString(), "ToDo Manager", "Task Category", "Edit Task Category", null, null))
         {
             <h4>Category: @Model.Category</h4>

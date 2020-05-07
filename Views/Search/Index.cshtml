@@ -5,7 +5,7 @@
 
 <link rel="stylesheet" href="~/Content/todo/search.css">
 @model Sitecore.Education.TodoManager.Models.SearchResultsList
-
+@using Sitecore.Links
 @using (Html.BeginForm())
 {
     <div class="form-inline">
@@ -28,17 +28,17 @@
                 {
                     <article class="search-result row">
                         <div class="col-xs-12 col-sm-12 col-md-3">
-                            <a href="#" title="Lorem ipsum" class="thumbnail"><img src="http://lorempixel.com/250/140/sports" alt="Lorem ipsum" /></a>
+                            <a href="#" title="Lorem ipsum" class="thumbnail"><img src="https://picsum.photos/200/100" alt="@item.Name" /></a>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-2">
                             <ul class="meta-search">
-                                <li><i class="glyphicon glyphicon-calendar"></i> <span>@item.DateDue</span></li>
-                                <li><i class="glyphicon glyphicon-time"></i> <span>@item.CreatedDate</span></li>
+                                <li><i class="glyphicon glyphicon-calendar"></i> <span>@(item.DateDue.ToShortDateString())</span></li>
+                                <li><i class="glyphicon glyphicon-time"></i> <span>@item.Status</span></li>
                                 <li><i class="glyphicon glyphicon-tags"></i> <span>@item.Category</span></li>
                             </ul>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-7">
-                            <h3><a href="@item.GetItem().Uri" title="">@item.Name</a></h3>
+                            <h3><a href="@LinkManager.GetItemUrl(item.GetItem())" title="">@item.Name</a></h3>
                             <p>@item.Description</p>
                         </div>
                         <span class="clearfix border"></span>
