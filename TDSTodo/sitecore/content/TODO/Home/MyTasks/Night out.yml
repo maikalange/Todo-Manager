@@ -4,6 +4,10 @@ Parent: "ed3bc3c1-43db-4fe3-92cd-066401f1773a"
 Template: "3606ee62-7048-4136-89b4-d4beac3b5806"
 Path: /sitecore/content/TODO/Home/MyTasks/Night out
 DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{0DC19D22-8645-4CF5-B4F8-0E6BF9DC0AD1}"
 Languages:
 - Language: en
   Versions:
@@ -18,21 +22,17 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20200506T074444Z
-    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
-      Hint: __Owner
-      Value: |
-        sitecore\Admin
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3798f627-2bbc-4f49-8992-8d5c68215d15"
+      Value: "65aaf53e-b9b4-4eb3-bc0d-254df8f0d621"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\Admin
+        sitecore\unicorn
     - ID: "bce9a0e8-3330-4a71-a489-9280aadc9eb0"
       Hint: Status
       Value: Done
@@ -41,7 +41,71 @@ Languages:
       Value: Domestic
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20200506T074444Z
+      Value: 20200511T071223Z
     - ID: "f22b54ec-dcc2-4ccb-bf30-ea9ddb9f85ff"
       Hint: DateDue
       Value: 20200523T000000
+  - Version: 2
+    Fields:
+    - ID: "2085c5dc-ea04-43df-89d8-fd23088dca28"
+      Hint: Details
+      Value: erterter
+    - ID: "25239693-1968-4c38-aa81-3e5417ab0e9c"
+      Hint: Description
+      Value: Night out
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200510T201036Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{732AD187-18C1-4082-9216-D044E3B56E25}"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\janezoe
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "52c59238-af35-44fd-bae2-0da2cbb186b0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "bce9a0e8-3330-4a71-a489-9280aadc9eb0"
+      Hint: Status
+      Value: Done
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20200510T201036Z
+    - ID: "d2106baa-d95d-4de5-8984-081b30e2ec1f"
+      Hint: Category
+      Value: Domestic
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20200511T071223Z
+    - ID: "f22b54ec-dcc2-4ccb-bf30-ea9ddb9f85ff"
+      Hint: DateDue
+      Value: 20200523T000000
+  - Version: 3
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200510T202011Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{732AD187-18C1-4082-9216-D044E3B56E25}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dfeceb85-2319-47fd-91e6-ef7ac4c779d1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20200510T202011Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20200511T071223Z

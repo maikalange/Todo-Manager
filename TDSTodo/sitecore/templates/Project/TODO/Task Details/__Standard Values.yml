@@ -5,6 +5,9 @@ Template: "3606ee62-7048-4136-89b4-d4beac3b5806"
 Path: /sitecore/templates/Project/TODO/Task Details/__Standard Values
 DB: master
 SharedFields:
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{0DC19D22-8645-4CF5-B4F8-0E6BF9DC0AD1}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -28,6 +31,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "2085c5dc-ea04-43df-89d8-fd23088dca28"
+      Hint: Details
+      Value: More fun with tasks.
     - ID: "25239693-1968-4c38-aa81-3e5417ab0e9c"
       Hint: Description
       Value: $name
@@ -44,11 +50,20 @@ Languages:
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7d1ab058-15ac-48c1-a495-d0366a789e0e"
+      Value: "1a62ab84-1299-48d3-9f5a-dedfae1c1f1c"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\admin
+        sitecore\Admin
+    - ID: "bce9a0e8-3330-4a71-a489-9280aadc9eb0"
+      Hint: Status
+      Value: In progress
+    - ID: "d2106baa-d95d-4de5-8984-081b30e2ec1f"
+      Hint: Category
+      Value: Educational
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20200502T161325Z
+      Value: 20200510T193016Z
+    - ID: "f22b54ec-dcc2-4ccb-bf30-ea9ddb9f85ff"
+      Hint: DateDue
+      Value: $date
