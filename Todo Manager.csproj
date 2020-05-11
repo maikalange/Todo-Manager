@@ -554,6 +554,7 @@
     <Content Include="App_Config\Include\Todo\Todo.DefaultIndexConfiguration.config" />
     <None Include="App_Config\Include\Todo\Solr.Todo.Web.Index.config" />
     <Content Include="App_Config\Include\Todo\Todo.SiteDefinition.config" />
+    <Content Include="App_Config\Include\Todo\Todo.Services.Client.Config" />
     <None Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.DeployedContentEditorWarnings.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
@@ -648,6 +649,7 @@
     <Content Include="Scripts\src\utils\setStyles.js" />
     <Content Include="Scripts\src\utils\setupEventListeners.js" />
     <Content Include="Scripts\Todo\CreateTask.js" />
+    <Content Include="Scripts\Todo\itemservice.min.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
