@@ -23,21 +23,23 @@ namespace Sitecore.Education.TodoManager.Controllers
         private List<Task> CreateModel()
         {
             TaskList tasks = new TaskList();
-            var items = Context.Database.GetItem("{ED3BC3C1-43DB-4FE3-92CD-066401F1773A}").GetChildren();
+            var items = Context.Database.GetItem("{ED3BC3C1-43DB-4FE3-92CD-066401F1773A}").GetChildren(Collections.ChildListOptions.SkipSorting).ToArray();
             foreach (Data.Items.Item item in items)
             {
-
-                Task t = new Task()
+                if (item.Fields["State"].GetStandardValue() == "{C35763FA-826C-433F-B0F9-D1C55400D57C}")
                 {
-                    Name = new HtmlString(item.Name),
-                    Category = new HtmlString(FieldRenderer.Render(item,"category")),
-                    Description = new HtmlString(FieldRenderer.Render(item, "description")),
-                    Details = new HtmlString(FieldRenderer.Render(item, "details")),
-                    DueDate = new HtmlString(FieldRenderer.Render(item, "datedue","format= dd-MM-yy")),
-                    Status = new HtmlString(FieldRenderer.Render(item, "status")),
-                    Url = new HtmlString(LinkManager.GetItemUrl(item))
-                };
-                tasks.Add(t);
+                    Task t = new Task()
+                    {
+                        Name = new HtmlString(item.Name),
+                        Category = new HtmlString(FieldRenderer.Render(item, "category")),
+                        Description = new HtmlString(FieldRenderer.Render(item, "description")),
+                        Details = new HtmlString(FieldRenderer.Render(item, "details")),
+                        DueDate = new HtmlString(FieldRenderer.Render(item, "datedue", "format= dd-MM-yy")),
+                        Status = new HtmlString(FieldRenderer.Render(item, "status")),
+                        Url = new HtmlString(LinkManager.GetItemUrl(item))
+                    };
+                    tasks.Add(t);
+                }
             }
             return tasks;
         }
