@@ -26,7 +26,6 @@ namespace Sitecore.Education.TodoManager.Controllers
             var items = Context.Database.GetItem("{ED3BC3C1-43DB-4FE3-92CD-066401F1773A}").GetChildren(Collections.ChildListOptions.SkipSorting).ToArray();
             foreach (Data.Items.Item item in items)
             {
-                if (item.Fields["State"].GetStandardValue() == "{C35763FA-826C-433F-B0F9-D1C55400D57C}")
                 {
                     Task t = new Task()
                     {
