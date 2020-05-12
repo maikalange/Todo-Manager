@@ -503,6 +503,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AddTaskController.cs" />
+    <Compile Include="Controllers\EditItemController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\TaskController.cs" />
@@ -649,6 +650,7 @@
     <Content Include="Scripts\src\utils\setStyles.js" />
     <Content Include="Scripts\src\utils\setupEventListeners.js" />
     <Content Include="Scripts\Todo\CreateTask.js" />
+    <Content Include="Scripts\Todo\EditItemTask.js" />
     <Content Include="Scripts\Todo\itemservice.min.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
@@ -670,6 +672,7 @@
     <Content Include="Views\Navigation\Index.cshtml" />
     <Content Include="Views\TaskList\AllTasks.cshtml" />
     <Content Include="Views\AddTask\Index.cshtml" />
+    <Content Include="Views\EditItem\Index.cshtml" />
     <None Include="Web.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Task\Index.cshtml" />
