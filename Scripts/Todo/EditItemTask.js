@@ -33,6 +33,18 @@ function bindList(listId,itemId) {
 }
 
 function editItemTask(form, path) {
+    var i = form.description.value;
+    var j = form.details.value;
+    var k = form.duedate.value;
+    var xhr = new XMLHttpRequest();
+    xhr.open("PATCH", "/sitecore/api/ssc/item/{13E434F8-5C67-4413-8412-5E58DD39D606}?database=master");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onreadystatechange = function () {
+        if (this.readyState == 4) {
+            alert('Status: ' + this.status + '\nHeaders: ' + JSON.stringify(this.getAllResponseHeaders()) + '\nBody: ' + this.responseText);
+        }
+    };
+    xhr.send("{ \n    \"ParentID\": \"ED3BC3C1-43DB-4FE3-92CD-066401F1773A\", \n    \"ItemName\":\"Home Renamed\", \n    \"Title\":\"Sitecore Modified\" \n}");
 
 }
 
