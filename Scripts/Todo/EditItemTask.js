@@ -45,7 +45,7 @@ function editItemTask(form) {
             }
         }
     };
-    var task = {};
+    var task = {}; 
     task.ParentID = "ED3BC3C1-43DB-4FE3-92CD-066401F1773A";
     task.Description = form.description.value;
     task.Details = form.details.value;
