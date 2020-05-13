@@ -7,8 +7,6 @@
         xhr.open("GET", "/sitecore/api/ssc/item/" + params.get('Id'));
         xhr.onreadystatechange = function () {
             if (this.readyState == 4) {
-                console.table(JSON.parse(this.responseText));
-
                 bindToForm(JSON.parse(this.responseText));
             }
         };
@@ -30,6 +28,8 @@ function bindList(listId,itemId) {
         }
     };
     xhr.send(null);
+    event.preventDefault();
+    return false;
 }
 function editItemTask(form) {
     var params = new URLSearchParams(window.location.search);
@@ -37,21 +37,25 @@ function editItemTask(form) {
     xhr.open("PATCH", `/sitecore/api/ssc/item/${params.get('Id')}?database=master`);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
-        if (this.readyState == 4) {            
+        if (this.readyState == 4) {
+            alert(this.status);
             if (this.status === 204) {
                 alert('Your task edit was successful');
             } else {
-                alert('Status: ' + this.status + '\nHeaders: ' + JSON.stringify(this.getAllResponseHeaders()) + '\nBody: ' + this.responseText);
+                alert('An item with that description already exists.\n Please choose another name.');
             }
         }
     };
     var task = {}; 
     task.ParentID = "ED3BC3C1-43DB-4FE3-92CD-066401F1773A";
     task.Description = form.description.value;
+    task.ItemName = form.description.value;
     task.Details = form.details.value;
     task.Category = document.querySelector('#categoryId option:checked').value;
     task.Status = document.querySelector('#statusId option:checked').value;
-    xhr.send(JSON.stringify(task));    
+    xhr.send(JSON.stringify(task));   
+    event.preventDefault();
+    return false;
 }
 function bindToForm(task) {
     if (task !== null || typeof task !== undefined) {
