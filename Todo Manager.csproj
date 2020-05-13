@@ -650,6 +650,7 @@
     <Content Include="Scripts\src\utils\setStyles.js" />
     <Content Include="Scripts\src\utils\setupEventListeners.js" />
     <Content Include="Scripts\Todo\CreateTask.js" />
+    <Content Include="Scripts\Todo\deleteTask.js" />
     <Content Include="Scripts\Todo\EditItemTask.js" />
     <Content Include="Scripts\Todo\itemservice.min.js" />
     <Content Include="Scripts\Todo\moment.js" />
@@ -674,6 +675,7 @@
     <Content Include="Views\TaskList\AllTasks.cshtml" />
     <Content Include="Views\AddTask\Index.cshtml" />
     <Content Include="Views\EditItem\Index.cshtml" />
+    <Content Include="Views\DeleteItem.cshtml" />
     <None Include="Web.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Task\Index.cshtml" />
