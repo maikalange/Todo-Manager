@@ -53,7 +53,6 @@ function editItemTask(form) {
     task.Status = document.querySelector('#statusId option:checked').value;
     xhr.send(JSON.stringify(task));    
 }
-
 function bindToForm(task) {
     if (task !== null || typeof task !== undefined) {
         document.querySelector('#description').setAttribute('value', task.Description);
