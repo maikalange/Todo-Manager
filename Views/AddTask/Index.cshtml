@@ -2,6 +2,7 @@
 <script src="~/Scripts/Todo/itemservice.min.js"></script>
 <script src="~/Scripts/Todo/createTask.js"></script>
 <form onsubmit="createTaskItem(this,'/sitecore/content/TODO/Home/MyTasks')">
+    <h3>@Html.Sitecore().Field("contentheading")</h3>
     <div class="form-group">
         <!-- Description -->
         <label for="description" class="control-label">Description</label>

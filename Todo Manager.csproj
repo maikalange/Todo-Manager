@@ -676,6 +676,7 @@
     <Content Include="Views\AddTask\Index.cshtml" />
     <Content Include="Views\EditItem\Index.cshtml" />
     <Content Include="Views\DeleteItem.cshtml" />
+    <Content Include="Views\SearchVR.cshtml" />
     <None Include="Web.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Task\Index.cshtml" />
