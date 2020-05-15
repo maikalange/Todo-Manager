@@ -3,8 +3,14 @@
 @model RenderingModel
 <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-<table id="allTasks" class="display" width="100%"></table>
+
 <script src="~/Scripts/Todo/moment.js"></script>
+<div>
+    <h3>@Html.Sitecore().Field("ContentHeading")</h3>
+    <p>@Html.Sitecore().Field("ContentIntro")</p>
+    <table id="allTasks" class="display" width="100%"></table>
+</div>
+
 <script src="~/Scripts/Todo/alltasks.js">
 
 </script>

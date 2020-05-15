@@ -656,6 +656,7 @@
     <Content Include="Scripts\Todo\deleteTask.js" />
     <Content Include="Scripts\Todo\EditItemTask.js" />
     <Content Include="Scripts\Todo\itemservice.min.js" />
+    <Content Include="Content\todo\jquery.dataTables.min.css" />
     <Content Include="Scripts\Todo\moment.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
