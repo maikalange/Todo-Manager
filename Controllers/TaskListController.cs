@@ -33,7 +33,7 @@ namespace Sitecore.Education.TodoManager.Controllers
                         Category = new HtmlString(FieldRenderer.Render(item, "category")),
                         Description = new HtmlString(FieldRenderer.Render(item, "description")),
                         Details = new HtmlString(FieldRenderer.Render(item, "details")),
-                        DueDate = new HtmlString(FieldRenderer.Render(item, "datedue", "format= dd-MM-yy")),
+                        DueDate = new HtmlString(FieldRenderer.Render(item, "datedue","format=dd/MM/yyyy")),
                         Status = new HtmlString(FieldRenderer.Render(item, "status")),
                         Url = new HtmlString(LinkManager.GetItemUrl(item))
                     };

@@ -1,7 +1,5 @@
 ﻿@using TAC.Utils.Helpers
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 
 <link rel="stylesheet" href="~/Content/todo/search.css">
 @model Sitecore.Education.TodoManager.Models.SearchResultsList
@@ -19,11 +17,15 @@
     {
         <div class="container">
             <section class="col-xs-12 col-sm-6 col-md-12">
+                @{
+                    var count = 1;
+                }
                 @foreach (var item in Model.Tasks)
                 {
+                    count++;
                     <article class="search-result row">
                         <div class="col-xs-12 col-sm-12 col-md-3">
-                            <a href="#" title="Lorem ipsum" class="thumbnail"><img src="https://picsum.photos/200/100" alt="@item.Name" /></a>
+                            <a href="#" title="Lorem ipsum" class="thumbnail"><img src="https://picsum.photos/200/100?random=@count" alt="@item.Name" /></a>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-2">
                             <ul class="meta-search">
