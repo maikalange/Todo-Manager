@@ -1,0 +1,45 @@
+---
+ID: "38dabb5a-f941-41ac-849e-9724aaed1ccf"
+Parent: "ed3bc3c1-43db-4fe3-92cd-066401f1773a"
+Template: "3606ee62-7048-4136-89b4-d4beac3b5806"
+Path: /sitecore/content/TODO/Home/MyTasks/Night Market II
+DB: master
+SharedFields:
+- ID: "25239693-1968-4c38-aa81-3e5417ab0e9c"
+  Hint: Description
+  Value: Night Market
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2085c5dc-ea04-43df-89d8-fd23088dca28"
+      Hint: Details
+      Value: Going to the night market.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200514T170241Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ServicesAPI
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "407ac520-a24a-4764-963e-d3d35ff3cf7f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d2106baa-d95d-4de5-8984-081b30e2ec1f"
+      Hint: Category
+      Value: Domestic
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20200627T102940Z
+    - ID: "f22b54ec-dcc2-4ccb-bf30-ea9ddb9f85ff"
+      Hint: DateDue
+      Value: 20200520T230000Z

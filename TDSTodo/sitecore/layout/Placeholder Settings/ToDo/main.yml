@@ -8,6 +8,14 @@ SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
   Value: main
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {52FDA716-9B80-40BE-BAA9-E74988A8D62C}
+    {658A14F7-0510-4D8D-AAF4-A788FB9EDC69}
+    {16B8946E-0E13-48AA-BA00-63490DE34256}
+    {D2BA5158-A1AE-4550-A893-8EC9E8BA112C}
 Languages:
 - Language: en
   Versions:
@@ -26,11 +34,11 @@ Languages:
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d9aa0763-ac08-4f5b-9a7d-53bd4b45ab93"
+      Value: "1e374026-12c4-40c8-aea2-c4e9ced93f5a"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20200501T125915Z
+      Value: 20200527T110843Z

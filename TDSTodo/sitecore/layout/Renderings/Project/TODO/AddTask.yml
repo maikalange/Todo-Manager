@@ -10,7 +10,7 @@ SharedFields:
   Value: Index
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: AddTask
+  Value: Sitecore.Education.TodoManager.Controllers.AddTaskController, Sitecore.Education.TodoManager
 Languages:
 - Language: en
   Versions:
@@ -29,11 +29,11 @@ Languages:
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "397f78d7-6295-4d80-8934-e644006a8271"
+      Value: "642f5edf-b62b-4469-bad9-45bc388e7df0"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20200504T090143Z
+      Value: 20200527T082636Z

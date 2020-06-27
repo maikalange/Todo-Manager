@@ -8,7 +8,7 @@ SharedFields:
 - ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
   Hint: __Security
   Value: |
-    au|sitecore\janezoe|pe|+item:create|+item:write|+item:read|+item:delete|pd|+item:create|+item:write|+item:read|+item:delete|
+    au|sitecore\bob|pe|+item:create|+item:write|+item:read|+item:delete|+item:admin|pd|+item:create|+item:write|+item:read|+item:delete|+item:admin|au|sitecore\janezoe|pe|+item:create|+item:write|+item:read|+item:delete|pd|+item:create|+item:write|+item:read|+item:delete|
 Languages:
 - Language: en
   Versions:
@@ -19,11 +19,11 @@ Languages:
       Value: 20200430T074520Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c63ec721-3bb4-4fb1-9dfc-3223a906e9d4"
+      Value: "5c5ec24f-11f1-4faf-bc29-d231d0acfd83"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20200510T195842Z
+      Value: 20200602T121915Z

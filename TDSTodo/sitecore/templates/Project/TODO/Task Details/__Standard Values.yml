@@ -5,6 +5,9 @@ Template: "3606ee62-7048-4136-89b4-d4beac3b5806"
 Path: /sitecore/templates/Project/TODO/Task Details/__Standard Values
 DB: master
 SharedFields:
+- ID: "25239693-1968-4c38-aa81-3e5417ab0e9c"
+  Hint: Description
+  Value: $name
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{0DC19D22-8645-4CF5-B4F8-0E6BF9DC0AD1}"
@@ -29,6 +32,10 @@ SharedFields:
           uid="{CAB252F8-570D-4D96-B41C-5E87FE29C228}" />
       </d>
     </r>
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 0
 Languages:
 - Language: en
   Versions:
@@ -40,30 +47,23 @@ Languages:
     - ID: "2085c5dc-ea04-43df-89d8-fd23088dca28"
       Hint: Details
       Value: More fun with tasks.
-    - ID: "25239693-1968-4c38-aa81-3e5417ab0e9c"
-      Hint: Description
-      Value: $name
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20200429T133452Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{732AD187-18C1-4082-9216-D044E3B56E25}"
-    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
-      Hint: __Owner
-      Value: |
-        sitecore\admin
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a983e222-09e7-4495-a1f7-670eea3ce885"
+      Value: "ce112416-a52a-4d5d-b246-c405add93bf8"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\Admin
+        sitecore\unicorn
     - ID: "bce9a0e8-3330-4a71-a489-9280aadc9eb0"
       Hint: Status
       Value: In progress
@@ -72,7 +72,7 @@ Languages:
       Value: Educational
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20200511T143537Z
+      Value: 20200612T133625Z
     - ID: "f22b54ec-dcc2-4ccb-bf30-ea9ddb9f85ff"
       Hint: DateDue
       Value: $date

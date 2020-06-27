@@ -1,34 +1,16 @@
 ---
-ID: "01c1d7df-70e4-4684-a54e-d996474039bc"
+ID: "533d1f7f-7dc8-4e72-8c6e-e10ed0a6ee48"
 Parent: "ed3bc3c1-43db-4fe3-92cd-066401f1773a"
 Template: "3606ee62-7048-4136-89b4-d4beac3b5806"
-Path: /sitecore/content/TODO/Home/MyTasks/Night out
+Path: /sitecore/content/TODO/Home/MyTasks/Do 1 hour of excercise
 DB: master
 SharedFields:
 - ID: "25239693-1968-4c38-aa81-3e5417ab0e9c"
   Hint: Description
-  Value: Night out
-- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
-  Hint: __Renderings
-  Type: layout
-  Value: |
-    <r xmlns:p="p" xmlns:s="s"
-      p:p="1"
-      s:xsd="http://www.w3.org/2001/XMLSchema">
-      <d
-        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-        <p
-          uid="{D7A1E46A-A17F-4A5D-BBF1-118B59868312}"
-          p:before="*"
-          s:key="main"
-          s:md="{386E3B82-2390-4892-A934-0463D8DA34DC}" />
-        <p
-          uid="{51DBC835-2FD4-4B5E-984F-892A70C0B20E}"
-          p:after="p[@uid='{D7A1E46A-A17F-4A5D-BBF1-118B59868312}']"
-          s:key="sidenav"
-          s:md="{D26709FF-E9A4-43C2-B425-B1FDEE090755}" />
-      </d>
-    </r>
+  Value: Do 1 hour of excercise
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{0DC19D22-8645-4CF5-B4F8-0E6BF9DC0AD1}"
 Languages:
 - Language: en
   Versions:
@@ -36,17 +18,17 @@ Languages:
     Fields:
     - ID: "2085c5dc-ea04-43df-89d8-fd23088dca28"
       Hint: Details
-      Value: kjhkjhkjh
+      Value: Run through the streets of Copenhagen
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200513T175750Z
+      Value: 20200514T125618Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\ServicesAPI
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4caa0d5b-040f-4694-87c0-1dcc133df2fc"
+      Value: "537c5f77-2aa1-4f04-9667-21c5c43df289"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -59,7 +41,7 @@ Languages:
       Value: Domestic
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20200627T104539Z
+      Value: 20200627T102726Z
     - ID: "f22b54ec-dcc2-4ccb-bf30-ea9ddb9f85ff"
       Hint: DateDue
       Value: 20200515T000000
