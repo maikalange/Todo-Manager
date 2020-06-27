@@ -28,6 +28,8 @@ namespace Sitecore.Education.TodoManager.Controllers
             using (var context = index.CreateSearchContext())
             {
                 var results = context.GetQueryable<TaskDetailsSearchItem>()
+                    .Where(i=>i.Language==RenderingContext.Current.ContextItem.Language.Name)
+                    .Where(i=>i["_latestversion"]=="1")
                 .Page(pageNo, PageSize)
                 .GetResults();
                 ViewBag.TotalResultCount = results.TotalSearchResults;

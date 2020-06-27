@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="@Html.Sitecore().Field("MetaDescription", new {DisableWebEdit=true})">
-    <title>@Html.Sitecore().Field("Title"@*, new { DisableWebEdit = true }*@)</title>
+    <title>@Html.Sitecore().Field("Title", new { DisableWebEdit = true })</title>
     <!-- Bootstrap core CSS -->
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 
@@ -24,12 +24,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <h1 class="my-4">My Tasks</h1>
+                <h2 class="my-4">My Tasks</h2>
                 @Html.Sitecore().Placeholder("sideNav")
             </div>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
-                @Html.Sitecore().Placeholder("mains")
+                @Html.Sitecore().Placeholder("main")
                 <!-- /.card -->
             </div>
             <!-- /.col-lg-9 -->
